@@ -45,7 +45,7 @@
 </head>
 <body class="lang-zh">
   <header>
-    <h1 class="zh">张文韬 Wentao Zhang</h1>
+    <h1 class="zh">张文韬</h1>
     <h1 class="en">Wentao Zhang</h1>
     <p class="zh">管理科学与工程 · 物流与交通系统 · 运筹优化与算法设计</p>
     <p class="en">Management Science and Engineering · Logistics and Transportation Systems · Operations Research & Optimization</p>
@@ -114,32 +114,79 @@
     <h2 class="zh">科研成果</h2>
     <h2 class="en">Research Outputs</h2>
     <div class="card">
-      <h3>硕士毕业论文</h3>
-      <p><strong>Title：</strong>UAM Vertiport Location Decision Based on Network Connectivity</p>
-      <p>针对城市空中交通（UAM）垂直起降场（vertiport）选址问题，解决现有研究忽视网络连通性、电池航程限制与乘客可达性耦合的局限；提出考虑连通性的选址优化模型（纳入建设成本、可达性、航程等因素），采用CPLEX数理规划建模求解、MATLAB混合遗传算法、Python数据分析及ArcGIS Pro空间可视化；在合成网络与纽约市案例中，有效保证网络连通性，降低系统成本并提升可达性，优于传统方法，通过灵敏度分析揭示航程限制和设施数量对网络结构与成本的影响；首次凸显连通性约束在UAM选址中的重要性，为后续研究提供理论与方法基础。</p>
+      <!-- 硕士毕业论文（中英切换版） -->
+<div class="card">
+  <h3 class="zh">硕士毕业论文</h3>
+  <h3 class="en">Master’s Thesis</h3>
 
-      <h3>期刊论文</h3>
-      <ul>
-        <li>
-          <strong>Zhang, W., & Hwang, T. (2025).</strong> <em>UAM Vertiport Network Design Considering Connectivity</em>. Systems, 13(7), 607. (JCR Q1, IF=3.1, SSCI, 第一作者)<br/>
-          研究问题：UAM垂直起降场选址需同时考虑建设成本、乘客可达性与网络连通性。<br/>
-          方法：提出考虑连通性约束的选址优化模型，设计混合遗传算法（MST-GA+GI），将最小生成树机制引入以保证网络可行性，并通过贪婪初始化提升解的稳定性。<br/>
-          实验：在合成网络与纽约市真实案例（444个候选点）中显著降低系统成本并提升收敛效率，优于传统方法。<br/>
-          意义：首次系统性引入连通性约束于UAM选址问题，提出可扩展优化框架，为高密度城市环境下空中交通网络布局提供定量决策工具。
-        </li>
-        <li>
-          <strong>Xu, S., & Zhang, W. (2025).</strong> <em>An improved DOA for global optimization and cloud task scheduling</em>. Symmetry, 17. (JCR Q2, IF=2.2, SCI, 第二作者)<br/>
-          提出改进Dhole Optimization Algorithm (IDOA)，集成Sobol序列初始化、正弦精英搜索策略与随机镜像扰动边界控制。在CEC2017测试函数与真实云计算任务调度实验中，Makespan平均降低约12%，能耗减少约15%，资源利用率提升约11%。
-        </li>
-      </ul>
+  <!-- 中文 -->
+  <div class="zh">
+    <p><strong>Title：</strong>UAM Vertiport Location Decision Based on Network Connectivity</p>
+    <p>
+      针对城市空中交通（UAM）垂直起降场（vertiport）选址问题，解决现有研究忽视网络连通性、电池航程限制与乘客可达性耦合的局限；
+      提出考虑连通性的选址优化模型（纳入建设成本、可达性、航程等因素），采用 CPLEX 数理规划建模求解、MATLAB 混合遗传算法、
+      Python 数据分析及 ArcGIS Pro 空间可视化；在合成网络与纽约市案例中，有效保证网络连通性，降低系统成本并提升可达性，
+      优于传统方法，通过灵敏度分析揭示航程限制和设施数量对网络结构与成本的影响；首次凸显连通性约束在 UAM 选址中的重要性，
+      为后续研究提供理论与方法基础。
+    </p>
+  </div>
 
-      <h3>国际会议论文（EI/IEEE收录）</h3>
-      <ul>
-        <li> Zhang, W. (2025). Research on Joint Optimization of Static Charging Point Layout and Path for Urban UAVs in PAD under Remote Sensing Image Feature Extraction Task Points. AIAHPC 2025, Hefei.（独立作者，已录用） </li>
-        <li> Zhang, W. (2025). Dynamic Path Planning Models and Algorithms for Urban Last-Mile Logistics Distribution. IoTAIMA 2025, Dalian.（独立作者，已录用） </li>
-      </ul>
-    </div>
-  </section>
+  <!-- English -->
+  <div class="en">
+    <p><strong>Title:</strong> UAM Vertiport Location Decision Based on Network Connectivity</p>
+    <p>
+      This thesis tackles vertiport siting in Urban Air Mobility (UAM) by coupling network connectivity, battery range,
+      and passenger accessibility. We propose a connectivity-aware location optimization model (incorporating construction
+      cost, accessibility, and range), solved via CPLEX, with a hybrid GA in MATLAB, Python-based analytics, and ArcGIS Pro
+      visualization. On synthetic networks and a New York City case, the approach ensures connectivity, lowers system cost,
+      and improves accessibility versus baselines. Sensitivity analysis reveals how range limits and facility counts affect
+      network structure and cost, highlighting the importance of connectivity constraints for UAM siting.
+    </p>
+  </div>
+</div>
+
+<!-- 期刊论文（中英切换版） -->
+<div class="card">
+  <h3 class="zh">期刊论文</h3>
+  <h3 class="en">Journal Articles</h3>
+
+  <!-- 中文 -->
+  <ul class="zh">
+    <li>
+      <strong>Zhang, W., &amp; Hwang, T. (2025).</strong>
+      <em>UAM Vertiport Network Design Considering Connectivity</em>. Systems, 13(7), 607.（JCR Q1, IF=3.1, SSCI，第一作者）<br/>
+      研究问题：UAM 垂直起降场选址需同时考虑建设成本、乘客可达性与网络连通性。<br/>
+      方法：提出考虑连通性约束的选址优化模型，设计混合遗传算法（MST-GA+GI），将最小生成树机制引入以保证网络可行性，并通过贪婪初始化提升解的稳定性。<br/>
+      实验：在合成网络与纽约市真实案例（444 个候选点）中显著降低系统成本并提升收敛效率，优于传统方法。<br/>
+      意义：首次系统性引入连通性约束于 UAM 选址问题，提出可扩展优化框架，为高密度城市环境下空中交通网络布局提供定量决策工具。
+    </li>
+    <li>
+      <strong>Xu, S., &amp; Zhang, W. (2025).</strong>
+      <em>An improved DOA for global optimization and cloud task scheduling</em>. Symmetry, 17.（JCR Q2, IF=2.2, SCI，第二作者）<br/>
+      提出改进 Dhole Optimization Algorithm（IDOA），集成 Sobol 序列初始化、正弦精英搜索与随机镜像边界控制。
+      在 CEC2017 测试函数与真实云任务调度中，平均 Makespan 降低约 12%，能耗降低约 15%，资源利用率提升约 11%。
+    </li>
+  </ul>
+
+  <!-- English -->
+  <ul class="en">
+    <li>
+      <strong>Zhang, W., &amp; Hwang, T. (2025).</strong>
+      <em>UAM Vertiport Network Design Considering Connectivity</em>. Systems, 13(7), 607. (JCR Q1, IF = 3.1, SSCI; First author)<br/>
+      Problem: Vertiport siting must jointly consider construction cost, accessibility, and network connectivity.<br/>
+      Method: A connectivity-constrained location model and a hybrid GA (MST-GA+GI) with an MST mechanism for feasibility and greedy initialization for stability.<br/>
+      Experiments: Significant cost reduction and faster convergence on synthetic networks and a real NYC case (444 candidates) vs. baselines.<br/>
+      Significance: First systematic integration of connectivity constraints into UAM siting with a scalable framework for dense urban deployments.
+    </li>
+    <li>
+      <strong>Xu, S., &amp; Zhang, W. (2025).</strong>
+      <em>An improved DOA for global optimization and cloud task scheduling</em>. Symmetry, 17. (JCR Q2, IF = 2.2, SCI; Second author)<br/>
+      Proposed an Improved DOA (IDOA) with Sobol initialization, sine elite search, and random mirror boundary control.
+      On CEC2017 and real cloud scheduling, average makespan decreased ~12%, energy ~15%, and resource utilization increased ~11%.
+    </li>
+  </ul>
+</div>
+
 
   <section id="projects">
     <h2 class="zh">科研项目经历</h2>
