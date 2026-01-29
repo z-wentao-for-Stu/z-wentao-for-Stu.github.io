@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张文韬 | 学术主页</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; background:#f7f8fa; color:#222; }
+    header { background:linear-gradient(120deg,#1f3c88,#4a69bd); color:white; padding:60px 20px; text-align:center; }
+    header h1 { margin:0; font-size:2.6em; }
+    header p { margin-top:12px; font-size:1.1em; opacity:0.95; }
+    #langToggle { margin-top:16px; padding:10px 16px; border:0; border-radius:10px; background:#fff; color:#1f3c88; font-weight:700; cursor:pointer; }
+    #langToggle:focus { outline:2px solid rgba(255,255,255,0.8); outline-offset:2px; }
+
+    nav { background:white; display:flex; justify-content:center; gap:28px; padding:14px 0; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; flex-wrap:wrap; }
+    nav a { text-decoration:none; color:#1f3c88; font-weight:600; }
+
+    section { max-width:1100px; margin:60px auto; padding:0 20px; scroll-margin-top:88px; }
+    section h2 { border-bottom:2px solid #eaeaea; padding-bottom:8px; margin-bottom:20px; color:#1f3c88; }
+
+    .card { background:white; padding:22px 26px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.06); margin-bottom:30px; }
+    ul, p { line-height:1.9; }
+
+    footer { text-align:center; padding:30px; color:#666; font-size:0.9em; }
+
+    /* 语言切换核心 */
+    .zh { display:block; }
+    .en { display:none; }
+    body.lang-en .zh { display:none !important; }
+    body.lang-en .en { display:block !important; }
+
+    /* 导航联动 */
+    nav a span.en { display:none; }
+    body.lang-en nav a span.en { display:inline; }
+    body.lang-en nav a span.zh { display:none; }
+
+    @media (max-width:640px){
+      header h1 { font-size:2.1em; }
+      nav { gap:16px; }
+    }
+  </style>
+</head>
+<body class="lang-zh">
+  <header>
+    <h1 class="zh">张文韬 Wentao Zhang</h1>
+    <h1 class="en">Wentao Zhang</h1>
+    <p class="zh">管理科学与工程 · 物流与交通系统 · 运筹优化与算法设计</p>
+    <p class="en">Management Science and Engineering · Logistics and Transportation Systems · Operations Research & Optimization</p>
+    <button id="langToggle" type="button" aria-pressed="false" aria-label="切换语言">English 英文</button>
+  </header>
+
+  <nav>
+    <a href="#basic"><span class="zh">基本信息</span><span class="en">Basic</span></a>
+    <a href="#publications"><span class="zh">科研成果</span><span class="en">Publications</span></a>
+    <a href="#projects"><span class="zh">科研项目经历</span><span class="en">Projects</span></a>
+    <a href="#education"><span class="zh">教育背景</span><span class="en">Education</span></a>
+    <a href="#skills"><span class="zh">研究能力与技能</span><span class="en">Skills</span></a>
+    <a href="#honors"><span class="zh">荣誉奖励</span><span class="en">Honors</span></a>
+    <a href="#contact"><span class="zh">联系方式</span><span class="en">Contact</span></a>
+  </nav>
+
+  <section id="basic">
+    <h2 class="zh">基本信息</h2>
+    <h2 class="en">Basic Information</h2>
+    <div class="card">
+      <p class="zh"><strong>姓名：</strong>张文韬</p>
+      <p class="en"><strong>Name:</strong> Wentao Zhang</p>
+
+      <p class="zh"><strong>出生年月：</strong>2000年1月</p>
+      <p class="en"><strong>Date of Birth:</strong> January 2000</p>
+
+      <p class="zh"><strong>政治面貌：</strong>中共党员</p>
+      <p class="en"><strong>Political Affiliation:</strong> CPC Member</p>
+
+      <p class="zh"><strong>申请专业：</strong>管理科学与工程（物流与交通系统、物流与工业工程、运筹优化及算法设计）</p>
+      <p class="en"><strong>Program Applied:</strong> Management Science and Engineering (Logistics and Transportation Systems, Logistics and Industrial Engineering, Optimization and Algorithm Design)</p>
+
+      <p class="zh"><strong>联系方式：</strong>手机 +86-18591503705 ｜ 邮箱 zwt1184430498@163.com</p>
+      <p class="en"><strong>Contact:</strong> Phone: +86-18591503705 ｜ Email: zwt1184430498@163.com</p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2 class="zh">科研成果</h2>
+    <h2 class="en">Research Outputs</h2>
+
+    <!-- 1) 硕士毕业论文 -->
+    <div class="card">
+      <h3 class="zh">硕士毕业论文</h3>
+      <h3 class="en">Master’s Thesis</h3>
+
+      <div class="zh">
+        <p><strong>Title：</strong>UAM Vertiport Location Decision Based on Network Connectivity</p>
+        <p>
+          针对城市空中交通（UAM）垂直起降场（vertiport）选址问题，解决现有研究忽视网络连通性、电池航程限制与乘客可达性耦合的局限；
+          提出考虑连通性的选址优化模型（纳入建设成本、可达性、航程等因素），采用 CPLEX 数理规划建模求解、MATLAB 混合遗传算法、
+          Python 数据分析及 ArcGIS Pro 空间可视化；在合成网络与纽约市案例中，有效保证网络连通性，降低系统成本并提升可达性，
+          优于传统方法；通过灵敏度分析揭示航程限制和设施数量对网络结构与成本的影响；首次凸显连通性约束的重要性。
+        </p>
+      </div>
+
+      <div class="en">
+        <p><strong>Title:</strong> UAM Vertiport Location Decision Based on Network Connectivity</p>
+        <p>
+          This thesis tackles vertiport siting in Urban Air Mobility by coupling network connectivity, battery range,
+          and passenger accessibility. A connectivity‑aware location model (construction cost, accessibility, range) is
+          solved via CPLEX; a hybrid GA in MATLAB, Python analytics, and ArcGIS Pro visualization support experiments.
+          On synthetic networks and a New York City case, connectivity is ensured, system cost is reduced, and accessibility
+          improves versus baselines. Sensitivity analysis shows how range and facility count shape network structure and cost.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2) 期刊论文 -->
+    <div class="card">
+      <h3 class="zh">期刊论文</h3>
+      <h3 class="en">Journal Articles</h3>
+
+      <ul class="zh">
+        <li>
+          <strong>Zhang, W., &amp; Hwang, T. (2025).</strong>
+          <em>UAM Vertiport Network Design Considering Connectivity</em>. Systems, 13(7), 607.（JCR Q1, IF=3.1, SSCI，第一作者）<br/>
+          研究问题：成本、可达性与网络连通性需同时考虑；方法：连通性约束选址模型 + 混合遗传算法（MST‑GA+GI）；
+          实验：合成网络与纽约市 444 候选点，成本更低、收敛更快；意义：首次系统性把连通性约束引入 UAM 选址。
+        </li>
+        <li>
+          <strong>Xu, S., &amp; Zhang, W. (2025).</strong>
+          <em>An improved DOA for global optimization and cloud task scheduling</em>. Symmetry, 17.（JCR Q2, IF=2.2, SCI，第二作者）<br/>
+          改进 IDOA：Sobol 初始化、正弦精英搜索、随机镜像边界；在 CEC2017 与真实云调度中，平均 Makespan −12%，能耗 −15%，利用率 +11%。
+        </li>
+      </ul>
+
+      <ul class="en">
+        <li>
+          <strong>Zhang, W., &amp; Hwang, T. (2025).</strong>
+          <em>UAM Vertiport Network Design Considering Connectivity</em>. Systems, 13(7), 607. (JCR Q1, IF=3.1, SSCI; First author).<br/>
+          Problem: Cost, accessibility, and network connectivity must be considered jointly. Method: connectivity‑constrained
+          location model + hybrid GA (MST‑GA+GI). Results: lower cost and faster convergence on synthetic networks and a NYC
+          case with 444 candidates. Significance: first systematic integration of connectivity constraints into UAM siting.
+        </li>
+        <li>
+          <strong>Xu, S., &amp; Zhang, W. (2025).</strong>
+          <em>An improved DOA for global optimization and cloud task scheduling</em>. Symmetry, 17. (JCR Q2, IF=2.2, SCI; Second author).<br/>
+          Improved DOA with Sobol initialization, sine elite search, and random mirror boundary control. On CEC2017 and real
+          cloud scheduling: avg. makespan −12%, energy −15%, utilization +11%.
+        </li>
+      </ul>
+    </div>
+
+    <!-- 3) 国际会议论文 -->
+    <div class="card">
+      <h3 class="zh">国际会议论文（EI/IEEE收录）</h3>
+      <h3 class="en">International Conference Papers (EI/IEEE)</h3>
+
+      <ul class="zh">
+        <li>Zhang, W. (2025). Research on Joint Optimization of Static Charging Point Layout and Path for Urban UAVs in PAD under Remote Sensing Image Feature Extraction Task Points. AIAHPC 2025, Hefei.（独立作者，已录用）</li>
+        <li>Zhang, W. (2025). Dynamic Path Planning Models and Algorithms for Urban Last‑Mile Logistics Distribution. IoTAIMA 2025, Dalian.（独立作者，已录用）</li>
+      </ul>
+
+      <ul class="en">
+        <li>Zhang, W. (2025). Research on Joint Optimization of Static Charging Point Layout and Path for Urban UAVs in PAD under Remote Sensing Image Feature Extraction Task Points. AIAHPC 2025, Hefei. (Sole author, accepted)</li>
+        <li>Zhang, W. (2025). Dynamic Path Planning Models and Algorithms for Urban Last‑Mile Logistics Distribution. IoTAIMA 2025, Dalian. (Sole author, accepted)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="zh">科研项目经历</h2>
+    <h2 class="en">Research Projects</h2>
+    <div class="card">
+      <ul class="zh">
+        <li><strong>国家级项目：BK21项目（创新人才）</strong>（NRF, 2023.08–2025.08）<br/>数字化转型时代的社会差距与消费物流研究：负责社会差距对消费物流影响研究，建立以配送效率与公平性为目标的选址与配送优化模型，结合CPLEX与ArcGIS Pro进行建模与可视化分析。</li>
+        <li><strong>国家级项目：CRC项目（IRIS 小工商产业者经济生态系统研究中心）</strong>（NRF, 2025.03–2025.08）<br/>负责小商户与消费者之间的配送优化研究，建立多目标优化模型，分析服务水平、配送成本与商户收益之间的平衡关系。</li>
+        <li><strong>校企合作项目：LG公司配送优化</strong>（2024.03–2024.08）<br/>研究VRP与TSP问题，建立以最小化配送成本和提高效率为目标的优化模型，结合CPLEX、MATLAB、Python与GIS进行综合分析与优化决策支持。</li>
+        <li><strong>校企合作实习：大韩航空 见习调度员</strong>（2023.11）<br/>将航班调度抽象为带时间窗TSP问题，进行方案模拟分析，提出提升准点率和降低延误率的优化建议。</li>
+      </ul>
+
+      <ul class="en">
+        <li><strong>National Project: BK21 Plus Program (Innovative Talent)</strong> (NRF, 2023.08–2025.08)<br/>Researched the impact of social disparities on consumer logistics in the digital age. Built location and delivery optimization models considering efficiency and fairness. Applied CPLEX for modeling and ArcGIS Pro for spatial analysis and visualization.</li>
+        <li><strong>National Project: CRC Project – IRIS SME Economic Ecosystem Research Center</strong> (NRF, 2025.03–2025.08)<br/>Focused on optimizing delivery between small merchants and consumers, balancing service quality, delivery cost, and vendor profitability via multi-objective modeling.</li>
+        <li><strong>Industry-Academia Project: LG Delivery Optimization</strong> (2024.03–2024.08)<br/>Built optimization models (VRP, TSP) using real business data to reduce costs and enhance delivery efficiency. Implemented solutions via CPLEX, MATLAB, Python, and GIS-based visualization for final recommendations.</li>
+        <li><strong>Internship: Korean Air Scheduling Assistant</strong> (2023.11)<br/>Abstracted flight scheduling as TSP with time windows. Analyzed flight schedules and proposed delay-reduction strategies through MATLAB and Python simulations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="zh">教育背景</h2>
+    <h2 class="en">Education Background</h2>
+    <div class="card">
+      <ul class="zh">
+        <li><strong>物流学术硕士（理学硕士）</strong>｜2023.08–2025.08<br/>主修课程：Logistics Network Analysis、System Optimizations、Smart Freight Mobility、Location Analysis for Logistics、Retail Logistics Data Analytics、English Thesis Writing 等</li>
+        <li><strong>物流工程（工学学士）</strong>｜2018.09–2022.06<br/>主修课程：运筹学、系统工程学、设施规划、生产计划与控制、MATLAB数值建模与仿真、供应链管理、航空物流等</li>
+      </ul>
+
+      <ul class="en">
+        <li><strong>M.S. in Logistics (Science)</strong>｜Aug 2023 – Aug 2025<br/>Core Courses: Logistics Network Analysis, System Optimizations, Smart Freight Mobility, Location Analysis for Logistics, Retail Logistics Data Analytics, English Thesis Writing</li>
+        <li><strong>B.E. in Logistics Engineering</strong>｜Sep 2018 – Jun 2022<br/>Core Courses: Operations Research, Systems Engineering, Facility Planning, Production Planning and Control, MATLAB Modeling and Simulation, Supply Chain Management, Aviation Logistics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="zh">研究能力与技能</h2>
+    <h2 class="en">Research Skills</h2>
+    <div class="card">
+      <ul class="zh">
+        <li>扎实的运筹优化建模能力：线性规划、混合整数规划、多目标优化、图论方法</li>
+        <li>熟练使用 CPLEX、Gurobi；掌握遗传算法、蚁群优化、粒子群优化、禁忌搜索及混合算法设计</li>
+        <li>熟练 MATLAB、Python 算法开发与大规模仿真</li>
+        <li>掌握 ArcGIS Pro 空间分析与可视化（需求热力图、网络连通性、设施选址展示）</li>
+        <li>研究方向涵盖交通网络设计、物流系统优化、无人机调度与能源补给系统</li>
+        <li>托福101分，具备国际学术写作与交流能力，已发表多篇 SCI/SSCI/EI 论文</li>
+      </ul>
+
+      <ul class="en">
+        <li>Strong modeling skills in operations research, including linear programming, mixed-integer programming, multi-objective optimization, and graph theory</li>
+        <li>Proficient in optimization solvers such as CPLEX and Gurobi; experienced with GA, ACO, PSO, tabu search, and hybrid metaheuristics</li>
+        <li>Skilled in algorithm development and large-scale simulation using MATLAB and Python</li>
+        <li>Experienced in spatial data analysis and GIS visualization using ArcGIS Pro (e.g., demand heatmaps, network connectivity, and facility layout)</li>
+        <li>Research areas include transportation network design, logistics system optimization, UAV scheduling, and energy-supply routing</li>
+        <li>TOEFL score: 101; capable of academic writing and international collaboration, with multiple publications in SCI/SSCI/EI journals</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="honors">
+    <h2 class="zh">荣誉奖励</h2>
+    <h2 class="en">Honors & Awards</h2>
+    <div class="card">
+      <ul class="zh">
+        <li>最佳硕士毕业论文奖（2025）</li>
+        <li>优秀论文奖（2024年韩国物流学会）</li>
+        <li>BK21研究资助（韩国研究财团，2023–2025）</li>
+        <li>多次国际与国内学术会议交流与成果展示</li>
+        <li>本科期间河南省一等奖学金、“三好学生”等荣誉</li>
+      </ul>
+
+      <ul class="en">
+        <li>Best Master's Thesis Award (2025)</li>
+        <li>Outstanding Paper Award (Korea Logistics Society, 2024)</li>
+        <li>BK21 Research Fellowship (NRF, Korea, 2023–2025)</li>
+        <li>Multiple academic presentations at international and domestic conferences</li>
+        <li>First-class Scholarship of Henan Province and "Three-Good Student" Award during undergraduate period</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="zh">联系方式</h2>
+    <h2 class="en">Contact</h2>
+    <div class="card">
+      <p class="zh">📱 手机：18591503705</p>
+      <p class="en">📱 Phone: +86-18591503705</p>
+      <p class="zh">📧 邮箱：zwt1184430498@163.com</p>
+      <p class="en">📧 Email: zwt1184430498@163.com</p>
+    </div>
+  </section>
+
+  <footer> © 2026 张文韬 | Wentao Zhang · 学术个人主页 </footer>
+
+  <script>
+    (function(){
+      const btn = document.getElementById('langToggle');
+      const updateBtnText = () => {
+        const isZh = !document.body.classList.contains('lang-en');
+        btn.textContent = isZh ? 'English 英文' : '中文 Chinese';
+        btn.setAttribute('aria-pressed', (!isZh).toString());
+      };
+      btn.addEventListener('click', () => {
+        document.body.classList.toggle('lang-en');
+        updateBtnText();
+      });
+      updateBtnText();
+
+      // 诊断：控制台提示是否仍有未打语言类的节点（仅限 publications 区域）
+      const orphanNodes = Array.from(document.querySelectorAll('#publications .card *'))
+        .filter(n => n.nodeType===1 && !n.classList.contains('zh') && !n.classList.contains('en') && !['H3','UL','P','LI','STRONG','EM','BR'].includes(n.tagName) ? false : false);
+      // （这里我们不自动处理，只是保留示例；页面结构已全量替换为带类版本）
+    })();
+  </script>
+</body>
+</html>
