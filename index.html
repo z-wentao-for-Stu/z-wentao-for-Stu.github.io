@@ -20,6 +20,7 @@
 </head>
 <body>
 
+<!-- ✅ 正确语言切换脚本 -->
 <script>
   function toggleLanguage() {
     const zhElements = document.querySelectorAll('.zh');
@@ -31,7 +32,10 @@
     if (toggleBtn) toggleBtn.innerText = isZh ? '中文 Chinese' : 'English 英文';
   }
   window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('langToggle')?.addEventListener('click', toggleLanguage);
+    const toggleBtn = document.getElementById('langToggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', toggleLanguage);
+    }
   });
 </script>
 
