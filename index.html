@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张文韬 | 学术主页</title>
+  <style>
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; background:#f7f8fa; color:#222; }
+    header { background:linear-gradient(120deg,#1f3c88,#4a69bd); color:white; padding:60px 20px; text-align:center; }
+    header h1 { margin:0; font-size:2.6em; }
+    header p { margin-top:12px; font-size:1.1em; opacity:0.95; }
+    nav { background:white; display:flex; justify-content:center; gap:28px; padding:14px 0; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; flex-wrap:wrap; }
+    nav a { text-decoration:none; color:#1f3c88; font-weight:600; }
+    section { max-width:1100px; margin:60px auto; padding:0 20px; }
+    section h2 { border-bottom:2px solid #eaeaea; padding-bottom:8px; margin-bottom:20px; color:#1f3c88; }
+    .card { background:white; padding:22px 26px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.06); margin-bottom:30px; }
+    ul, p { line-height:1.9; }
+    footer { text-align:center; padding:30px; color:#666; font-size:0.9em; }
+  </style>
+</head>
+<body>
+
+<!-- Correct language switcher script -->
+<script>
+  function toggleLanguage() {
+    const zhElements = document.querySelectorAll('.zh');
+    const enElements = document.querySelectorAll('.en');
+    const isZh = zhElements[0]?.style.display !== 'none';
+    zhElements.forEach(el => el.style.display = isZh ? 'none' : 'block');
+    enElements.forEach(el => el.style.display = isZh ? 'block' : 'none');
+    const toggleBtn = document.getElementById('langToggle');
+    if (toggleBtn) toggleBtn.innerText = isZh ? '中文 Chinese' : 'English 英文';
+  }
+  window.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('langToggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', toggleLanguage);
+    }
+  });
+</script>
+
+<header>
+  <h1 class="zh">张文韬 Wentao Zhang</h1>
+  <h1 class="en" style="display:none">Wentao Zhang</h1>
+  <p class="zh">管理科学与工程 · 物流与交通系统 · 运筹优化与算法设计</p>
+  <p class="en" style="display:none">Management Science and Engineering · Logistics and Transportation Systems · Operations Research & Optimization</p>
+  <button id="langToggle">English 英文</button>
+</header>
+
+<nav>
+  <a href="#basic">基本信息</a>
+  <a href="#contact">联系方式</a>
+</nav>
+
+<section id="basic">
+  <h2 class="zh">基本信息</h2>
+  <h2 class="en" style="display:none">Basic Information</h2>
+  <div class="card">
+    <p class="zh"><strong>姓名：</strong>张文韬</p>
+    <p class="en" style="display:none"><strong>Name:</strong> Wentao Zhang</p>
+    <p class="zh"><strong>出生年月：</strong>2000年1月</p>
+    <p class="en" style="display:none"><strong>Date of Birth:</strong> January 2000</p>
+    <p class="zh"><strong>联系方式：</strong>手机 +86-18591503705 ｜ 邮箱 zwt1184430498@163.com</p>
+    <p class="en" style="display:none"><strong>Contact:</strong> Phone: +86-18591503705 ｜ Email: zwt1184430498@163.com</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="zh">联系方式</h2>
+  <h2 class="en" style="display:none">Contact</h2>
+  <div class="card">
+    <p>📱 手机：18591503705</p>
+    <p>📧 邮箱：zwt1184430498@163.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 张文韬 | Wentao Zhang · 学术个人主页
+</footer>
+</body>
+</html>
