@@ -110,36 +110,117 @@
     </div>
   </section>
 
-  <section id="publications">
-    <h2 class="zh">科研成果</h2>
-    <h2 class="en">Research Outputs</h2>
-    <div class="card">
-      <h3>硕士毕业论文</h3>
-      <p><strong>Title：</strong>UAM Vertiport Location Decision Based on Network Connectivity</p>
-      <p>针对城市空中交通（UAM）垂直起降场（vertiport）选址问题，解决现有研究忽视网络连通性、电池航程限制与乘客可达性耦合的局限；提出考虑连通性的选址优化模型（纳入建设成本、可达性、航程等因素），采用CPLEX数理规划建模求解、MATLAB混合遗传算法、Python数据分析及ArcGIS Pro空间可视化；在合成网络与纽约市案例中，有效保证网络连通性，降低系统成本并提升可达性，优于传统方法，通过灵敏度分析揭示航程限制和设施数量对网络结构与成本的影响；首次凸显连通性约束在UAM选址中的重要性，为后续研究提供理论与方法基础。</p>
+ <section id="publications">
+  <!-- 标题随语言切换 -->
+  <h2 class="zh">科研成果</h2>
+  <h2 class="en">Research Outputs</h2>
 
-      <h3>期刊论文</h3>
-      <ul>
-        <li>
-          <strong>Zhang, W., & Hwang, T. (2025).</strong> <em>UAM Vertiport Network Design Considering Connectivity</em>. Systems, 13(7), 607. (JCR Q1, IF=3.1, SSCI, 第一作者)<br/>
-          研究问题：UAM垂直起降场选址需同时考虑建设成本、乘客可达性与网络连通性。<br/>
-          方法：提出考虑连通性约束的选址优化模型，设计混合遗传算法（MST-GA+GI），将最小生成树机制引入以保证网络可行性，并通过贪婪初始化提升解的稳定性。<br/>
-          实验：在合成网络与纽约市真实案例（444个候选点）中显著降低系统成本并提升收敛效率，优于传统方法。<br/>
-          意义：首次系统性引入连通性约束于UAM选址问题，提出可扩展优化框架，为高密度城市环境下空中交通网络布局提供定量决策工具。
-        </li>
-        <li>
-          <strong>Xu, S., & Zhang, W. (2025).</strong> <em>An improved DOA for global optimization and cloud task scheduling</em>. Symmetry, 17. (JCR Q2, IF=2.2, SCI, 第二作者)<br/>
-          提出改进Dhole Optimization Algorithm (IDOA)，集成Sobol序列初始化、正弦精英搜索策略与随机镜像扰动边界控制。在CEC2017测试函数与真实云计算任务调度实验中，Makespan平均降低约12%，能耗减少约15%，资源利用率提升约11%。
-        </li>
-      </ul>
+  <!-- 硕士论文 -->
+  <div class="card">
+    <h3 class="zh">硕士毕业论文</h3>
+    <h3 class="en">Master’s Thesis</h3>
 
-      <h3>国际会议论文（EI/IEEE收录）</h3>
-      <ul>
-        <li> Zhang, W. (2025). Research on Joint Optimization of Static Charging Point Layout and Path for Urban UAVs in PAD under Remote Sensing Image Feature Extraction Task Points. AIAHPC 2025, Hefei.（独立作者，已录用） </li>
-        <li> Zhang, W. (2025). Dynamic Path Planning Models and Algorithms for Urban Last-Mile Logistics Distribution. IoTAIMA 2025, Dalian.（独立作者，已录用） </li>
-      </ul>
+    <div class="pub-item">
+      <!-- 英文题名：两种语言下都显示 -->
+      <span class="pub-title-en">
+        UAM Vertiport Location Decision Based on Network Connectivity
+      </span>
+
+      <!-- 中文摘要：仅中文模式显示 -->
+      <div class="pub-body zh">
+        针对城市空中交通（UAM）垂直起降场选址问题，提出考虑连通性的选址优化模型（纳入建设成本、可达性与航程），
+        采用 CPLEX、混合遗传算法（MATLAB）、Python 分析与 ArcGIS Pro 可视化；在合成网络与纽约市案例中，
+        有效保证网络连通性、降低系统成本并提升可达性；灵敏度分析揭示航程与设施数量对网络结构与成本的影响。
+      </div>
+
+      <!-- 英文摘要：仅英文模式显示 -->
+      <div class="pub-body en">
+        A connectivity-aware location model solved via CPLEX with a hybrid GA (MATLAB),
+        Python analytics and ArcGIS Pro visualization. On synthetic networks and a NYC case,
+        it ensures connectivity, lowers system cost and improves accessibility; sensitivity
+        analysis shows the effects of range and facility count on network structure and cost.
+      </div>
     </div>
-  </section>
+  </div>
+
+  <!-- 期刊论文 -->
+  <div class="card">
+    <h3 class="zh">期刊论文</h3>
+    <h3 class="en">Journal Articles</h3>
+
+    <ul class="list-none" style="padding-left:0;margin:0;">
+      <!-- Paper 1 -->
+      <li class="pub-item" style="margin-bottom:16px;">
+        <span class="pub-title-en">
+          Zhang, W., &amp; Hwang, T. (2025).
+          <em>UAM Vertiport Network Design Considering Connectivity</em>.
+          <strong>Systems</strong>, 13(7), 607. (SSCI, JCR Q1, IF=3.1)
+        </span>
+
+        <div class="pub-body zh">
+          研究问题：UAM 选址需同时考虑建设成本、乘客可达性与网络连通性。<br/>
+          方法：连通性约束选址模型 + 混合遗传算法（MST-GA+GI），以 MST 保障可行性、以贪婪初始化提升稳定性。<br/>
+          实验：合成网络与纽约市 444 个候选点中显著降本、收敛更快，优于传统方法。<br/>
+          意义：首次系统性将连通性约束引入 UAM 选址，提出可扩展框架。
+        </div>
+
+        <div class="pub-body en">
+          Problem: jointly consider cost, accessibility and connectivity.
+          Method: connectivity-constrained location model + hybrid GA (MST-GA+GI) with MST feasibility
+          and greedy initialization. Results: lower cost and faster convergence on synthetic sets
+          and a 444-candidate NYC case. Significance: first systematic integration of connectivity
+          constraints for UAM siting.
+        </div>
+      </li>
+
+      <!-- Paper 2 -->
+      <li class="pub-item" style="margin-bottom:16px;">
+        <span class="pub-title-en">
+          Xu, S., &amp; Zhang, W. (2025).
+          <em>An improved DOA for global optimization and cloud task scheduling</em>.
+          <strong>Symmetry</strong>, 17. (SCI, JCR Q2, IF=2.2)
+        </span>
+
+        <div class="pub-body zh">
+          提出改进 IDOA：Sobol 初始化、正弦精英搜索、随机镜像边界控制；
+          在 CEC2017 及真实云调度中，平均 Makespan ↓约 12%，能耗 ↓约 15%，资源利用率 ↑约 11%。
+        </div>
+
+        <div class="pub-body en">
+          Improved DOA with Sobol initialization, sine-elite search and random mirror boundary control;
+          on CEC2017 and real cloud scheduling, avg. makespan ↓~12%, energy ↓~15%, utilization ↑~11%.
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 国际会议论文 -->
+  <div class="card">
+    <h3 class="zh">国际会议论文（EI/IEEE 收录）</h3>
+    <h3 class="en">International Conference Papers (EI/IEEE)</h3>
+
+    <ul class="list-none" style="padding-left:0;margin:0;">
+      <li class="pub-item" style="margin-bottom:16px;">
+        <span class="pub-title-en">
+          Zhang, W. (2025). Joint Optimization of Static Charging Point Layout and Path for Urban UAVs in PAD…
+          <strong>AIAHPC 2025</strong>, Hefei. (Sole author, accepted)
+        </span>
+        <div class="pub-body zh">城市 PAD 场景下，静态充电点布局与路径联合优化；以遥感任务点为驱动，给出实验验证。</div>
+        <div class="pub-body en">Joint optimization of PAD charging layout and routing under remote-sensing task points; experiments validate the approach.</div>
+      </li>
+
+      <li class="pub-item" style="margin-bottom:16px;">
+        <span class="pub-title-en">
+          Zhang, W. (2025). Dynamic Path Planning Models and Algorithms for Urban Last-Mile Logistics Distribution.
+          <strong>IoTAIMA 2025</strong>, Dalian. (Sole author, accepted)
+        </span>
+        <div class="pub-body zh">城市末端配送场景的动态路径规划模型与算法设计，含仿真与基线对比。</div>
+        <div class="pub-body en">Dynamic routing models and algorithms for last-mile logistics with simulations and baselines.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
   <section id="projects">
     <h2 class="zh">科研项目经历</h2>
